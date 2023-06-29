@@ -15,7 +15,7 @@ public class Controller {
 
     @GetMapping("/data")
     public ResponseEntity getData(){
-        System.out.println(getBean.apply("Hello"));
+        System.out.println(getBean.apply("Hello").toString());
         return ResponseEntity.ok("Hello");
     }
 
